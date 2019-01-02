@@ -32,7 +32,7 @@ h1, h2, h3{
 }
 
 a {
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
 }
 
@@ -48,7 +48,7 @@ header{
 
 main{
     padding: 4rem;
-    min-height: calc(100vh-60px);
+    min-height: calc(100vh - 60px);
 
     .icons {
         margin-top:1rem;

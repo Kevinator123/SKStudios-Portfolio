@@ -145,11 +145,26 @@ main{
 
 //Contact page
 .boxes {
-    display: flex;
+   /* display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly;*/
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-areas: 
+    'email email'
+    'phone adress';
     align-items: center;
     margin-top: 1rem;
+
+    .email{
+        grid-area: email;
+    }
+    .phone{
+        grid-area: phone;
+    }
+    .adress{
+        grid-area: adress;
+    }
 
     div{
         font-size: 2rem;

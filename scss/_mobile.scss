@@ -66,6 +66,24 @@
     .projects{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .boxes{
+        grid-template-areas:
+        'email'
+        'phone'
+        'adress';
+
+        .email{
+            font-size: 15px;
+        }
+        .phone{
+            font-size: 15px;
+        }
+        .adress{
+            font-size: 15px;
+        }
+        
+    }
 }
 //Smartphones
 @include mediaSm{

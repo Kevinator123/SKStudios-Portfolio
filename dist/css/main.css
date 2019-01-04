@@ -199,11 +199,20 @@ main {
       transition: all 0.5s ease-out; }
 
 .boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;*/
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-areas: 'email email' 'phone adress';
   align-items: center;
   margin-top: 1rem; }
+  .boxes .email {
+    grid-area: email; }
+  .boxes .phone {
+    grid-area: phone; }
+  .boxes .adress {
+    grid-area: adress; }
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
@@ -285,7 +294,15 @@ main {
     .about-info .bio {
       font-size: 15px; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes {
+    grid-template-areas: 'email' 'phone' 'adress'; }
+    .boxes .email {
+      font-size: 15px; }
+    .boxes .phone {
+      font-size: 15px; }
+    .boxes .adress {
+      font-size: 15px; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
